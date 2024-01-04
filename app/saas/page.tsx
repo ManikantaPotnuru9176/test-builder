@@ -16,7 +16,7 @@ export default async function Page(props: PageProps) {
     .get("page", {
       userAttributes: {
         // Use the page path specified in the URL to fetch the content
-        urlPath: "/" + (props?.params?.page?.join("/") || ""),
+        urlPath: "/saas" + (props?.params?.page?.join("/saas") || ""),
       },
     })
     // Convert the result to a promise
